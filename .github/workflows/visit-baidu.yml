@@ -3,6 +3,8 @@ on:
   schedule:
     # 设置每小时运行一次
     - cron: '0 * * * *'
+  
+    
 jobs:
   visit-baidu:
     runs-on: ubuntu-latest
@@ -11,7 +13,3 @@ jobs:
       run: |
         # 使用 curl 访问 www.baidu.com
         curl -I https://www.baidu.com
-on:
-  schedule:
-    - cron: '0 * * * *'
-  workflow_dispatch: # 添加这一行来允许手动触发
