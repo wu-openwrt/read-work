@@ -1,14 +1,11 @@
 name: Visit Baidu Every Hour
-
 on:
   schedule:
     # 设置每小时运行一次
     - cron: '0 * * * *'
-
 jobs:
   visit-baidu:
     runs-on: ubuntu-latest
-
     steps:
     - name: Visit Baidu
       run: |
